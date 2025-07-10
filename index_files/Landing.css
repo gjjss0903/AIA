@@ -1,0 +1,321 @@
+/* 전체 적용 */
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #fff;
+}
+#wrap {
+  max-width: 818px;
+}
+#wrap img {
+  width: 100%;
+}
+.tb-bg {
+  position: relative;
+}
+.tb {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 58.5%;
+  left: 50%;
+  width: 87%;
+  height: 60%;
+  /* border: 1px solid gold; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tb2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 86%;
+  top: 87.5%;
+  left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tb img {
+  width: 47.7% !important;
+  display: flex;
+  margin-top: 2%;
+  transition: transform 0.3s ease; /* 부드러운 애니메이션 */
+}
+.tb2 img {
+  width: 32% !important;
+  display: flex;
+  transition: transform 0.3s ease; /* 부드러운 애니메이션 */
+}
+.tb img:hover,
+.tb2 img:hover {
+  transform: scale(1.05); /* 마우스 오버 시 약간 확대 */
+}
+.DB-bg {
+  position: relative;
+}
+.DB {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85.04%;
+  left: 62%;
+  /* left: 55%; */
+  /* border: 1px solid black; */
+  width: 43%;
+  height: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.DB input {
+  height: 20%;
+  outline: none;
+  border: none;
+  padding-left: 5%;
+}
+.DB-chk {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 90.15%;
+  left: 35%;
+  color: #fff;
+}
+.DB-chk label {
+  cursor: pointer;
+}
+.DB-chk span {
+  font-weight: 1000;
+  cursor: pointer;
+}
+.DB-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 92.5%;
+  left: 50%;
+  width: 67%;
+  /* align-items: center; */
+}
+.DB-btn img {
+  align-items: center;
+  cursor: pointer;
+}
+.pr {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 97.75%;
+  left: 74.5%;
+  /* border: 1px solid white; */
+  width: 13%;
+  height: 0.6%;
+  cursor: pointer;
+}
+.scroll {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  max-width: 818px;
+  transform: translate(-50%, 0%);
+  /* border: 1px solid red; */
+  /* overflow: hidden; */
+}
+.scroll img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 818px;
+}
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+/* 초기 상태 - 안 보이게 하고 아래쪽에 위치 */
+.upimg-2-1 img,
+.upimg-2-2 img,
+.upimg-2-3 img,
+.upimg-3-1 img,
+.upimg-4-1 img,
+.upimg-4-2 img,
+.upimg-5-1 img,
+.upimg-5-2 img,
+.upimg-6-1 img {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s ease-out;
+}
+/* 나타날 때 적용될 상태 */
+.upimg-2-1 img.scroll-up-show,
+.upimg-2-2 img.scroll-up-show,
+.upimg-2-3 img.scroll-up-show,
+.upimg-3-1 img.scroll-up-show,
+.upimg-4-1 img.scroll-up-show,
+.upimg-4-2 img.scroll-up-show,
+.upimg-5-1 img.scroll-up-show,
+.upimg-5-2 img.scroll-up-show,
+.upimg-6-1 img.scroll-up-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.upimg-2-1.scroll-up-show { transition-delay: 1s; }
+.upimg-2-2.scroll-up-show { transition-delay: 1s; }
+.upimg-2-3.scroll-up-show { transition-delay: 0.5s; }
+.upimg-3-1.scroll-up-show { transition-delay: 0.5s; }
+.upimg-4-1.scroll-up-show { transition-delay: 0.5s; }
+.upimg-4-2.scroll-up-show { transition-delay: 0.5s; }
+.upimg-5-1.scroll-up-show { transition-delay: 0.5s; }
+.upimg-5-2.scroll-up-show { transition-delay: 0.5s; }
+.upimg-6-1.scroll-up-show { transition-delay: 0.5s; }
+
+/* 이미지 올라오기 */
+.upimg-bg {
+  position: relative;
+}
+.upimg-2-1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 8.5%;
+  left: 48%;
+  width: 78%;
+  /* border: 1px solid red; */
+}
+.upimg-2-1 img {
+  width: 80% !important;
+}
+.upimg-2-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 34%;
+  left: 54%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.upimg-2-2 img {
+  width: 90% !important;
+}
+.upimg-2-3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 73%;
+  left: 59.5%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.upimg-2-3 img {
+  width: 80% !important;
+}
+.upimg-3-1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 17.4%;
+  left: 59.5%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.upimg-3-1 img {
+  width: 65% !important;
+}
+.upimg-4-1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 38%;
+  left: 45%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.upimg-4-1 img {
+  width: 85% !important;
+}
+.upimg-4-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 79.5%;
+  left: 50%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.upimg-4-2 img {
+  width: 77% !important;
+}
+.upimg-5-1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 26.5%;
+  left: 50%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.upimg-5-1 img {
+  width: 80% !important;
+}
+.upimg-5-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 61.1%;
+  left: 50%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.upimg-5-2 img {
+  width: 87% !important;
+}
+.upimg-6-1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 22%;
+  left: 50%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.upimg-6-1 img {
+  width: 65% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:818px) {
+  .DB input {
+    font-size: 2vw;
+  }
+  .DB-chk {
+    font-size: 1.9vw;
+  }
+  .DB-chk label input {
+    width: 1.9vw;
+    height: 1.9vw;
+  }
+}

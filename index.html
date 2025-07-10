@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Landing.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIA</title>
+<link rel="stylesheet" href="./index_files/Landing.css"><link href="./index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"><link rel="stylesheet" href="./index_files/bootstrap-icons.css"><script src="./index_files/code.jquery.com_jquery-3.7.0.min.js.다운로드"></script><script src="./index_files/bootstrap.bundle.min.js.다운로드" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script></head>
+  
+  
+  
+  
+  
+<body>
+  
+  <div id="wrap">
+
+    <img src="./index_files/1.png">
+
+    <div class="upimg-bg">
+      <img src="./index_files/2.png">
+      <div class="upimg-2-1">
+        <img src="./index_files/2-1.png" class="scroll-up-hidden">
+      </div>
+      <div class="upimg-2-2">
+        <img src="./index_files/2-2.png" class="scroll-up-hidden">
+      </div>
+      <div class="upimg-2-3">
+        <img src="./index_files/2-3.png" class="scroll-up-hidden">
+      </div>
+    </div>
+    
+    <div class="tb-bg">
+      <img src="./index_files/3.png">
+      <div class="upimg-3-1">
+        <img src="./index_files/3-0.png" class="scroll-up-hidden">
+      </div>
+      <div class="tb">
+        <img src="./index_files/3-1.png">
+        <img src="./index_files/3-3.png">
+        <img src="./index_files/3-2.png">
+        <img src="./index_files/3-4.png">
+      </div>
+    </div>
+    
+    <div class="upimg-bg">
+      <img src="./index_files/4.png">
+      <div class="upimg-4-1">
+        <img src="./index_files/4-1.png" class="scroll-up-hidden">
+      </div>
+      <div class="upimg-4-2">
+        <img src="./index_files/4-2.png" class="scroll-up-hidden">
+      </div>
+    </div>
+
+    <div class="upimg-bg">
+      <img src="./index_files/5.png">
+      <div class="upimg-5-1">
+        <img src="./index_files/5-1.png" class="scroll-up-hidden">
+      </div>
+      <div class="upimg-5-2">
+        <img src="./index_files/5-2.png" class="scroll-up-hidden">
+      </div>
+      <div class="tb2">
+        <img src="./index_files/5-3.png">
+        <img src="./index_files/5-4.png">
+        <img src="./index_files/5-5.png">
+      </div>
+    </div>
+
+    <div class="DB-bg">
+      <img src="./index_files/6.png">
+      <div class="upimg-6-1">
+        <img src="./index_files/6-1.png" class="scroll-up-hidden">
+      </div>
+      <div class="DB" id="DB">
+        <input type="text">
+        <input type="tel">
+        <input type="text">
+        <input type="text" placeholder="추천인 성명 *선택">
+      </div>
+      <div class="DB-chk">
+        <label>
+          <input type="checkbox"> 개인정보 처리방침에 동의합니다.
+        </label>
+        <span data-bs-toggle="modal" data-bs-target="#exampleModal1">[보기]</span>
+      </div>
+      <div class="DB-btn">
+        <img src="./index_files/btn.png">
+      </div>
+      <div class="pr" data-bs-toggle="modal" data-bs-target="#exampleModal2"></div>
+    </div>
+    <img src="./index_files/scroll_btn.png">
+
+    <div class="scroll">
+      <img src="./index_files/scroll_btn.png" class="scroll-btn" onclick="document.getElementById(&#39;DB&#39;).scrollIntoView({ behavior: &#39;smooth&#39; })">
+    </div>
+    
+
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><b>[필수] 개인정보 수집·이용 동의</b></h1>
+      </div>
+      <div class="modal-body">
+        AIA프리미어파트너스는 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따라 귀하의 개인정보를 다음과 같이 수집·이용하고자 합니다. 내용을 충분히 읽어보신 후 동의 여부를 결정해 주시기 바랍니다.
+        <br>
+        <br>
+        <b>(1) 수집·이용 목적</b>
+        <br>
+        • 위촉 계약 체결 여부 판단하기 위한 자료 <br>
+        • 지원자와의 의사소통 경로 확보
+        <br>
+        <br>
+        <b>(2) 수집·이용 항목</b>
+        <br>
+        • 일반개인정보: 성명, 유·무선 전화번호, 희망 근무 지역, 추천인 성명(선택사항)<br>
+        <b>(3) 보유·이용 기간</b>
+        <br>
+        <b>• 동의일로부터 1년 또는 동의 철회 시까지</b>
+        <br>
+        <br>
+        ※ 귀하는 상기 동의를 거부할 수 있습니다. 다만, 동의를 하시지 않는 경우에는 위촉 계약의 체결을 위한 절차를 더 이상 진행할 수 없습니다.
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><b>[필수] 개인정보 수집·이용 동의</b></h1>
+      </div>
+      <div class="modal-body">
+        AIA프리미어파트너스는 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」에 따라 귀하의 개인정보를 다음과 같이 수집·이용하고자 합니다. 내용을 충분히 읽어보신 후 동의 여부를 결정해 주시기 바랍니다.
+        <br>
+        <br>
+        <b>(1) 수집·이용 목적</b>
+        <br>
+        • 위촉 계약 체결 여부 판단하기 위한 자료 <br>
+        • 지원자와의 의사소통 경로 확보
+        <br>
+        <br>
+        <b>(2) 수집·이용 항목</b>
+        <br>
+        • 일반개인정보: 성명, 유·무선 전화번호, 희망 근무 지역, 추천인 성명(선택사항)<br>
+        <b>(3) 보유·이용 기간</b>
+        <br>
+        <b>• 동의일로부터 1년 또는 동의 철회 시까지</b>
+        <br>
+        <br>
+        ※ 귀하는 상기 동의를 거부할 수 있습니다. 다만, 동의를 하시지 않는 경우에는 위촉 계약의 체결을 위한 절차를 더 이상 진행할 수 없습니다.
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-up-show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.6
+  });
+
+  document.querySelectorAll('.scroll-up-hidden').forEach(el => {
+    observer.observe(el);
+  });
+});
+</script>
+
+</body><!-- Modal --></html>
